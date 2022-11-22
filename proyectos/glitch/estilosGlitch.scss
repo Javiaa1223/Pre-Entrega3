@@ -2,14 +2,19 @@ body {
   background: black;
   font-family: "Oswald", sans-serif;
   font-style: italic;
+  max-height: 100vh;
+  width: 100vw;
 }
-
+html{
+  height: max-content;
+}
 .container {
   position: absolute;
   transform: translate(-50%, -50%);
   position: absolute;
   top: 50%;
-  left: 80%;
+  left: 60%;
+  width: 50%;
   display: flex ;
   flex-direction: column;
 }
@@ -17,9 +22,10 @@ body {
 .glitch {
   color: rgb(223, 191, 191);
   position: relative;
-  font-size: 9vw;
+  font-size: 8vw;
   // margin: 70px 200px;
   animation: glitch 5s 5s infinite;
+  margin-left: 5vw;
 }
 
 .glitch::before {
@@ -109,17 +115,19 @@ body {
 
 .scanlines {
   overflow: hidden;
-  mix-blend-mode: difference;
 }
 
 .scanlines::before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 0;
+  height: 90%;
+  top: 5vh;
   left: 0;
-
+ body{
+  max-width: 100vw;
+  overflow: hidden;
+ }
   background: repeating-linear-gradient(
     to bottom,
     transparent 0%,
@@ -142,7 +150,7 @@ body {
 
 .glow {
   @extend .glitch;
-  text-shadow: 0 0 1000px rgb(234, 250, 147);
+  text-shadow: 0 0 500px rgb(234, 250, 147);
   color: transparent;
   position: absolute;
   top: 0;
@@ -157,7 +165,7 @@ body {
   letter-spacing: 1em;
   text-align: center;
   position: absolute;
-  left:0%;
+  left:10%;
   top: 90%;
   animation: glitch-2 5s 5.02s infinite;
 }
