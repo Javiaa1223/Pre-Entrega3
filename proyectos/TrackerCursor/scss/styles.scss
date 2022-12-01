@@ -8,11 +8,12 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: url('../images/wallpaperbetter.jpg') center no-repeat;
+  background: url("../images/wallpaperbetter.jpg") center no-repeat;
   background-size: cover;
   display: grid;
   place-items: center;
   height: 100vh;
+  max-height: 100vh;
   overflow-x: hidden;
   font-weight: 300;
 }
@@ -33,11 +34,28 @@ input {
   width: 40px;
   z-index: 9999;
   pointer-events: none;
-  transition: all .15s;
+  transition: all 0.15s;
 }
-.tracker svg{
+.tracker svg {
   width: 100%;
   height: 100%;
 }
 
-
+@keyframes movimiento__pez {
+  $pasos: 10;
+  @for $i from 1 through $pasos {
+    #{percentage($i*(1/$pasos))} {
+      $top: random(50);
+      $left: random(50);
+      transform:translate(#{$left}vw,#{$top}vw);
+    }
+   
+  }
+}
+.un__pez {
+  position: relative;
+  animation-duration: 20s;
+  animation-name: movimiento__pez;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

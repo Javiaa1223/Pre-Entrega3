@@ -12,6 +12,7 @@ body {
   display: grid;
   place-items: center;
   height: 100vh;
+  max-height: 100vh;
   overflow-x: hidden;
   font-weight: 300;
 }
@@ -38,4 +39,81 @@ input {
 .tracker svg {
   width: 100%;
   height: 100%;
+}
+
+@-webkit-keyframes movimiento__pez {
+  10% {
+    transform: translate(17vw, 20vw);
+  }
+  20% {
+    transform: translate(16vw, 17vw);
+  }
+  30% {
+    transform: translate(45vw, 48vw);
+  }
+  40% {
+    transform: translate(1vw, 9vw);
+  }
+  50% {
+    transform: translate(2vw, 49vw);
+  }
+  60% {
+    transform: translate(30vw, 33vw);
+  }
+  70% {
+    transform: translate(41vw, 37vw);
+  }
+  80% {
+    transform: translate(2vw, 34vw);
+  }
+  90% {
+    transform: translate(35vw, 11vw);
+  }
+  100% {
+    transform: translate(7vw, 37vw);
+  }
+}
+
+@keyframes movimiento__pez {
+  10% {
+    transform: translate(17vw, 20vw);
+  }
+  20% {
+    transform: translate(16vw, 17vw);
+  }
+  30% {
+    transform: translate(45vw, 48vw);
+  }
+  40% {
+    transform: translate(1vw, 9vw);
+  }
+  50% {
+    transform: translate(2vw, 49vw);
+  }
+  60% {
+    transform: translate(30vw, 33vw);
+  }
+  70% {
+    transform: translate(41vw, 37vw);
+  }
+  80% {
+    transform: translate(2vw, 34vw);
+  }
+  90% {
+    transform: translate(35vw, 11vw);
+  }
+  100% {
+    transform: translate(7vw, 37vw);
+  }
+}
+.un__pez {
+  position: relative;
+  -webkit-animation-duration: 20s;
+          animation-duration: 20s;
+  -webkit-animation-name: movimiento__pez;
+          animation-name: movimiento__pez;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }/*# sourceMappingURL=styles.css.map */

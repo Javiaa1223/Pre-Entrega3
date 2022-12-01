@@ -1,0 +1,9 @@
+main {
+  div .fotoInt {
+    height: 30vw;
+    text-align: center;
+  }
+  div .descarga{
+    @include flex;
+  }
+}

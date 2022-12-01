@@ -1,0 +1,126 @@
+main {
+  div {
+    &.invitacion {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2vw;
+      font-weight: 500;
+      width: 80%;
+      text-align: center;
+      justify-content: space-evenly;
+      text-justify: center;
+      margin-left: 10%;
+    }
+
+    div {
+      div form .formContacto {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        justify-items: center;
+
+        .ulForm {
+          width: 60%;
+          list-style: none;
+          text-align: center;
+          li {
+            .textoContacto {
+              box-sizing: border-box;
+            }
+          }
+        }
+      }
+      textarea::placeholder {
+        font-family: "Bebas Neue", cursive;
+      }
+      .checkBox {
+        width: auto;
+        font-family: "Bebas Neue", cursive;
+        font-size: 1.5vw;
+      }
+      input {
+        font-family: "Bebas Neue", cursive;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        outline: none;
+      }
+   
+    }
+  }
+  .formContacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-items: center;
+  }
+
+  .ulForm {
+    width: 80%;
+    list-style: none;
+    text-align: center;
+  }
+  #enviar:hover {
+    color: gray;
+    background-color: white;
+    transform: scale(1.02);
+    transition: transform 0.2s ease;
+  }
+  
+.form-control:focus {
+  border-color: rgba(209, 212, 48, 0.836);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(209, 212, 48, 0.836);
+}
+/* checkbox-rect */
+.checkbox-rect input[type="checkbox"] {
+  font-family: "Bebas Neue", cursive;
+  display: none;
+}
+.checkbox-rect input[type="checkbox"] + label {
+  font-family: "Bebas Neue", cursive;
+  color: grey;  position: relative;
+  margin-top: 20px;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 14px/20px "Open Sans", Arial, sans-serif;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+.checkbox-rect input[type="checkbox"]:hover + label:hover {
+  color: rgba(209, 212, 48, 0.836);
+}
+.checkbox-rect input[type="checkbox"]:hover + label:before {
+  background: #50565a;
+  box-shadow: inset 0px 0px 0px 2px #f7f2f2;
+}
+.checkbox-rect input[type="checkbox"] + label:last-child {
+  margin-bottom: 0;
+  font-family: "Bebas Neue", cursive;
+}
+.checkbox-rect input[type="checkbox"] + label:before {
+  content: "";
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  border: 1px solid #343a3f;
+  border-radius: 0.2em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.2s, background 0.2s ease-in-out;
+  transition: all 0.2s, background 0.2s ease-in-out;
+  background: #f3f3f3;
+}
+.checkbox-rect input[type="checkbox"]:checked + label:before {
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 0.2em;
+  border: 2px solid #fff;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  background:rgba(209, 212, 48, 0.836);;
+  box-shadow: 0 0 0 1px #000;
+}
+/* checkbox-rect end */
+
+}

@@ -4,190 +4,42 @@
   padding-left: 0%;
 }
 
-body {
-  font-size: medium;
-  background-color: #121212;
-  color: grey;
-  margin: 20px;
-  height: 95%;
-  max-height: -webkit-fit-content;
-  max-height: -moz-fit-content;
-  max-height: fit-content;
-}
-
-html {
-  height: 100vh;
-}
-
-a {
-  color: white;
-  display: inline-block;
-  text-decoration: none;
-}
-
-p {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5vh;
-}
-
-.primeraFila {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
-  justify-content: center;
-  text-align: center;
-}
-
-.primera {
-  font-family: "Bebas Neue", cursive;
-  font-size: 8vw;
-  color: rgba(209, 212, 48, 0.836);
-  text-decoration: none;
-}
-
-.primera:hover {
-  color: white;
-}
-
-.segunda {
-  font-family: "Bebas Neue", cursive;
-  color: grey;
-  text-align: center;
-  font-size: 6vw;
-}
-
-.segunda:hover {
-  color: rgba(209, 212, 48, 0.836);
-  transform: scale(1.5);
-}
-
-.front {
-  font-family: "Caveat", cursive;
-  color: rgba(209, 212, 48, 0.836);
-  font-size: 6vw;
-  text-align: center;
-}
-
-.front:hover {
-  color: white;
-}
-
-.frontend {
-  text-align: center;
-  -webkit-transform: rotate(-10deg);
-  -moz-transform: rotate(-10deg);
-}
-
-.icon {
-  font-size: 2.5vw;
-  color: grey;
-  justify-content: space-arround;
-  margin-bottom: 10px;
-}
-
-.icon:hover {
-  color: white;
-  transform: scale(1.2, 1.2);
-  transition: transform 0.2s ease;
-}
-
-.cont {
-  display: flex;
-  flex-direction: row;
-  flex-flow: wrap;
-  justify-items: center;
-  justify-content: space-between;
-}
-
-.first {
-  text-align: center;
-}
-
-#rFirst {
-  margin-right: 1.5rem;
-}
-
-.descarga {
-  display: flex;
-  justify-content: space-evenly;
-  justify-items: center;
-}
-
-.descargaCv {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.1vw;
-  color: #121212;
-  font-weight: bold;
-  background-color: white;
-  border-radius: 0.3vw;
-  width: 40%;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-.descargaCv:hover {
-  color: gray;
-  background-color: white;
-  transform: scale(1.02);
-  transition: transform 0.2s ease;
-}
-
-/* lista de estilos footer */
-.pFooter:hover {
-  color: white;
-}
-
-.pFooter::after {
-  color: rgba(209, 212, 48, 0.836);
-}
-
-.footer {
-  display: flex;
-  justify-content: space-evenly;
-  font-family: "Bebas Neue", cursive;
-  text-align: center;
-  width: 100%;
-}
-
-.footerindex {
-  display: flex;
-  justify-content: space-evenly;
-  font-family: "Bebas Neue", cursive;
-  text-align: center;
-  position: absolute;
-  width: 100%;
+ul {
+  list-style-type: none;
+  padding-left: 0%;
+  margin-bottom: 0;
 }
 
 /* lista de estilos header */
-.hamburger,
-.close {
+header .burger .listaDesp {
+  text-align: center;
+  padding: 0;
+}
+header .burger .listaDesp .hamburger,
+header .burger .listaDesp .close {
   border: none;
   cursor: pointer;
   text-align: center;
 }
-
-.hamburger {
+header .burger .listaDesp .hamburger {
   background: #121212;
-  color: white;
+  color: grey;
 }
-
-.close {
+header .burger .listaDesp .close {
   background: #121212;
 }
-
-.hamburger img {
-  width: 100%;
-  height: 100%;
+header .burger .listaDesp #close {
+  color: grey;
 }
-
-.close img {
-  width: 50%;
-  height: 50%;
+header .burger .listaDesp .hamburger img {
+  width: 400%;
+  height: 400%;
 }
-
-.navbar {
+header .burger .listaDesp .close img {
+  width: 5vh;
+  height: 5vh;
+}
+header .burger .listaDesp .navbar {
   position: absolute;
   z-index: 1000;
   top: 0;
@@ -204,542 +56,90 @@ p {
   transform: translateY(-100%);
   transition: transform 0.2s ease;
 }
-
-.navbar:target {
+header .burger .listaDesp .navbar:target {
   transform: translateY(0);
 }
-
-li a {
+header .burger .listaDesp .navbar:focus {
+  border-color: rgba(209, 212, 48, 0.836);
+  border: solid 3px;
+  outline: none;
+}
+header .burger .listaDesp li a {
   display: block;
-  font-family: "Open Sans", sans-serif;
-  color: white;
+  color: grey;
   font-weight: bold;
-  font-size: 1vh;
+  font-size: 3vw;
   text-decoration: none;
 }
-
-.burger a {
+header .burger .listaDesp .burger a {
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+  font-size: 3.5vw;
+  color: grey;
+}
+header .burger .listaDesp .burger a:hover {
+  color: grey;
+  transform: scale(1.1, 1.1);
+  transition: transform 0.5s ease;
+}
+header .burger .listaDesp .burger:hover {
+  color: white;
+}
+header .burger .listaDesp a {
   font-family: "Bebas Neue", cursive;
   text-decoration: none;
   font-size: 2.5vw;
   color: grey;
 }
-
-.burger a:hover {
+header .burger .listaDesp a:hover {
   color: white;
   transform: scale(1.1, 1.1);
   transition: transform 0.5s ease;
 }
-
-.burger:hover {
+header .burger .listaDesp:hover {
   color: white;
 }
 
-input {
-  font-family: "Bebas Neue", cursive;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  outline: none;
-}
-
-.navbar:focus {
-  border-color: rgba(209, 212, 48, 0.836);
-  border: solid 3px;
-  outline: none;
-}
-
-.checkBox {
-  width: auto;
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.5vw;
-}
-
-.textoContacto {
-  font-family: "Montserrat", sans-serif;
-  box-sizing: border-box;
-}
-
-textarea::-moz-placeholder {
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.5vh;
-  color: #121212;
-}
-
-textarea:-ms-input-placeholder {
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.5vh;
-  color: #121212;
-}
-
-textarea::placeholder {
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.5vh;
-  color: #121212;
-}
-
-.fotoPerfil {
-  width: 20vw;
-  filter: grayscale(100%);
-  text-align: center;
-  justify-self: center;
-}
-
-.fotoPerfil:hover {
-  transform: scale(1.3, 1.3);
-  transition: transform 0.2s ease;
-  padding: 0;
-  margin: 0;
-}
-
-.infPers {
-  display: flex;
-  justify-items: center;
-  justify-content: space-evenly;
-  padding-top: 2vh;
-}
-
-.infoPers {
-  display: flex;
-  flex-direction: column;
-  justify-items: center;
-}
-
-.formacion {
-  padding-bottom: 2vh;
-}
-
-.intereses {
-  padding-top: 2vh;
-}
-
-.fotoP {
-  overflow: hidden;
-  width: 80%;
-  text-align: center;
-}
-
-.filaServ {
-  margin-top: 4vh;
-  margin-bottom: 4vh;
-}
-
-.formContacto {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  justify-items: center;
-}
-
-.ulForm {
-  width: 80%;
-  list-style: none;
-  text-align: center;
-}
-
-.Invitacion {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1vh;
-  font-weight: 500;
-  width: 80%;
-  text-align: center;
-  justify-content: space-evenly;
-  text-justify: center;
-  margin-left: 10%;
-}
-
-.titulos1 {
-  font-family: "Bebas Neue", cursive;
-  font-size: 3vw;
-}
-
-.titulos1:hover {
-  color: white;
-  transition: transform 0.2s ease;
-}
-
-.titulos2 {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2vw;
-  font-weight: 500;
-}
-
-.Invitacion {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2vw;
-  font-weight: 500;
-  width: 80%;
-  text-align: center;
-}
-
-.textoExp {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.5vw;
-  font-weight: 300;
-}
-
-.cardbtn {
-  font-family: "Montserrat", sans-serif;
-  font-size: 1.1vw;
-  color: #121212;
-  font-weight: bold;
-  background-color: gray;
-  border-radius: 1vw;
-  width: 40%;
-}
-
-.cardbtn:hover {
-  color: #121212;
-  background-color: white;
-}
-
-.btngris {
-  text-align: center;
-}
-
-.aFooter {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.listaDesp {
-  text-align: center;
-  padding: 0;
-}
-
-ul {
-  list-style-type: none;
-  padding-left: 0%;
-}
-
-.carrusel {
+/* lista de estilos footer */
+footer {
   display: flex;
   justify-content: space-evenly;
-}
-
-.primeraimg {
-  width: 800px;
-}
-
-.tituloSeccion {
   font-family: "Bebas Neue", cursive;
+  text-align: center;
   color: grey;
-  text-align: center;
-  font-size: 20vh;
-  margin-bottom: 2vh;
+  width: 100%;
 }
-
-.tituloSeccion:hover {
-  color: rgba(209, 212, 48, 0.836);
+footer .aFooter {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
-
-#enviar:hover {
-  color: gray;
-  background-color: white;
-  transform: scale(1.02);
+footer .aFooter a .icon {
+  font-size: 2.5vw;
+  color: grey;
+  justify-content: space-arround;
+  margin-bottom: 10px;
+}
+footer .aFooter a .icon:hover {
+  color: white;
+  transform: scale(1.2, 1.2);
   transition: transform 0.2s ease;
 }
+footer .pFooter {
+  color: gray;
+  font-size: 2vw;
+}
+footer .pFooter:hover {
+  color: white;
+}
 
+/* lista de estilos header */
+/* clases .slideShow */
 .slideShow {
   text-align: center;
   width: 80%;
 }
 
-.btnProyectos {
-  display: flex;
-  justify-content: space-evenly;
-  justify-items: center;
-}
-
-.btnBcoProy {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2vh;
-  color: #121212;
-  font-weight: bold;
-  background-color: white;
-  border-radius: 0.3vw;
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  padding-left: 15px;
-  padding-right: 15px;
-  width: 100%;
-}
-
-.btnBcoProy:hover {
-  color: gray;
-  background-color: white;
-  transform: scale(1.02);
-  transition: transform 0.2s ease;
-}
-
-/* Media query para tablets  */
-@media screen and (max-width: 768px) {
-  .navbar {
-    position: absolute;
-    z-index: 1000;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    list-style: none;
-    background: #121212;
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    transform: translateY(-100%);
-    transition: transform 0.2s ease;
-  }
-  .navbar:target {
-    transform: translateY(0);
-  }
-  .hamburger img {
-    width: 150%;
-    height: 150%;
-  }
-  .close img {
-    width: 70%;
-    height: 70%;
-  }
-  li a {
-    display: block;
-    font-family: "Open Sans", sans-serif;
-    color: white;
-    font-weight: bold;
-    font-size: 2vh;
-    text-decoration: none;
-  }
-  .burger a {
-    font-family: "Bebas Neue", cursive;
-    text-decoration: none;
-    font-size: 6vh;
-    color: grey;
-  }
-  /* estilos main*/
-  .cont {
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .primera {
-    font-family: "Bebas Neue", cursive;
-    font-size: 10vh;
-    color: rgba(209, 212, 48, 0.836);
-    text-decoration: none;
-    line-height: 15vh;
-  }
-  .segunda {
-    font-family: "Bebas Neue", cursive;
-    color: grey;
-    text-align: center;
-    font-size: 6vh;
-    line-height: 30vw;
-  }
-  .front {
-    font-family: "Caveat", cursive;
-    color: rgba(209, 212, 48, 0.836);
-    font-size: 8.5vh;
-    text-align: center;
-    line-height: 30vh;
-  }
-  .pFooter {
-    color: gray;
-    text-align: center;
-    font-size: 3vh;
-  }
-  .icon {
-    font-size: 4vh;
-    color: gray;
-    justify-content: space-arround;
-    margin-bottom: 10px;
-  }
-  .titulos1 {
-    font-family: "Bebas Neue", cursive;
-    font-size: 4vh;
-    text-align: center;
-  }
-  .titulos2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1.8vh;
-    font-weight: 500;
-    text-align: center;
-  }
-  .textoExp {
-    font-family: "Montserrat", sans-serif;
-    font-size: 2vh;
-    font-weight: 300;
-    text-align: center;
-  }
-  .tituloSeccion {
-    font-size: 8vh;
-  }
-  .fotoPerfil {
-    width: 10vw;
-  }
-  .primeraimg {
-    width: 70vw;
-  }
-  .ulForm {
-    width: 80%;
-    list-style: none;
-    text-align: center;
-  }
-  .checkBox {
-    width: auto;
-    font-family: "Bebas Neue", cursive;
-    font-size: 1.8vh;
-  }
-  .fotoServ {
-    text-align: center;
-    width: 20vw;
-    display: grid;
-  }
-  .descargaCv {
-    font-family: "Montserrat", sans-serif;
-    font-size: 1vh;
-    color: #121212;
-    font-weight: bold;
-    background-color: white;
-    border-radius: 0.3vw;
-    width: 40%;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-  }
-  #rFirst {
-    margin-right: 1.5rem;
-  }
-  .fotoPerfil {
-    width: 40vw;
-  }
-  .fotoServ {
-    width: 40vw;
-  }
-}
-@media only screen and (min-width: 769px) and (max-width: 1024px) {
-  .navbar:target {
-    transform: translateY(0);
-  }
-  #rFirst {
-    margin-right: 0rem;
-  }
-  .hamburger img {
-    width: 150%;
-    height: 150%;
-  }
-  .close img {
-    width: 70%;
-    height: 70%;
-  }
-  li a {
-    display: block;
-    font-family: "Open Sans", sans-serif;
-    color: white;
-    font-weight: bold;
-    font-size: 1vh;
-    text-decoration: none;
-  }
-  .burger a {
-    font-family: "Bebas Neue", cursive;
-    text-decoration: none;
-    font-size: 3vh;
-    color: grey;
-  }
-  /* estilos main*/
-  .cont {
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .primera {
-    font-family: "Bebas Neue", cursive;
-    font-size: 12vh;
-    color: rgba(209, 212, 48, 0.836);
-    text-decoration: none;
-    line-height: 20vh;
-  }
-  .segunda {
-    font-family: "Bebas Neue", cursive;
-    color: grey;
-    text-align: center;
-    font-size: 8vh;
-    line-height: 20vh;
-  }
-  .front {
-    font-family: "Caveat", cursive;
-    color: rgba(209, 212, 48, 0.836);
-    font-size: 11vh;
-    text-align: center;
-    line-height: 20vh;
-  }
-  #rFirst {
-    margin-right: 1.5rem;
-  }
-  /* estilos footer*/
-  .pFooter {
-    color: grey;
-    text-align: center;
-    font-size: 3vh;
-  }
-  .icon {
-    font-size: 4vh;
-    color: grey;
-    justify-content: space-arround;
-    margin-bottom: 10px;
-  }
-  .titulos1 {
-    font-family: "Bebas Neue", cursive;
-    font-size: 4vh;
-    text-align: center;
-  }
-  .titulos2 {
-    font-family: "Montserrat", sans-serif;
-    font-size: 2vh;
-    font-weight: 500;
-    text-align: center;
-  }
-  .tituloSeccion {
-    font-size: 11vh;
-  }
-  .textoExp {
-    font-family: "Montserrat", sans-serif;
-    font-size: 2vh;
-    font-weight: 300;
-    text-align: center;
-  }
-  .fotoPerfil {
-    width: 20vw;
-    justify-self: center;
-  }
-  .primeraimg {
-    width: 70vw;
-  }
-  .ulForm {
-    width: 100%;
-    list-style: none;
-    text-align: center;
-  }
-  .checkBox {
-    width: auto;
-    font-family: "Bebas Neue", cursive;
-    font-size: 1.8vh;
-  }
-  .fotoPerfil {
-    width: 40vw;
-  }
-  .fotoServ {
-    width: 80vw;
-  }
-}
-/* clases .slideShow */
 .csslider {
   -ms-perspective: 70vw;
   perspective: 70vw;
@@ -971,54 +371,779 @@ ul {
   transform: rotate(225deg);
 }
 
-.fotoInt {
+/* lista de estilos main index */
+main div .primeraFila {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  justify-content: center;
+  text-align: center;
+}
+main div .primeraFila .cont {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  justify-items: center;
+  justify-content: space-between;
+}
+main div .primeraFila .cont .first {
+  text-align: center;
+}
+main div .primeraFila .cont .first .primera {
+  font-family: "Bebas Neue", cursive;
+  font-size: 8vw;
+  color: rgba(209, 212, 48, 0.836);
+  text-decoration: none;
+}
+main div .primeraFila .cont .first .primera:hover {
+  color: white;
+}
+main div .primeraFila .cont .first #rFirst {
+  margin-right: 1.5rem;
+}
+main div .segunda {
+  font-family: "Bebas Neue", cursive;
+  color: grey;
+  text-align: center;
+  font-size: 6vw;
+}
+main div .segunda:hover {
+  color: rgba(209, 212, 48, 0.836);
+  transform: scale(1.5);
+}
+main div .front {
+  font-family: "Caveat", cursive;
+  color: rgba(209, 212, 48, 0.836);
+  font-size: 6vw;
+  text-align: center;
+}
+main div .front:hover {
+  color: white;
+}
+main div .frontend {
+  text-align: center;
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+}
+
+/* lista de estilos main proyectos */
+main div .titulos2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  font-weight: 500;
+}
+main div .cardslide {
+  display: flex;
+  justify-content: space-evenly;
+}
+main div .btnProyectos {
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+main div .btnBcoProy {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vh;
+  color: #121212;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 0.3vw;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 100%;
+}
+main div .btnBcoProy:hover {
+  color: gray;
+  background-color: white;
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+main div .titulos1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3vw;
+}
+main .icono {
+  font-size: 5vw;
+}
+
+/* lista de estilos main proyectos */
+main div .fotoInt {
   height: 30vw;
   text-align: center;
 }
+main div .descarga {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+}
 
-.cardslide {
+/* lista de estilos main contacto */
+main {
+  /* checkbox-rect */
+  /* checkbox-rect end */
+}
+main div.invitacion {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  font-weight: 500;
+  width: 80%;
+  text-align: center;
+  justify-content: space-evenly;
+  text-justify: center;
+  margin-left: 10%;
+}
+main div div div form .formContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+main div div div form .formContacto .ulForm {
+  width: 60%;
+  list-style: none;
+  text-align: center;
+}
+main div div div form .formContacto .ulForm li .textoContacto {
+  box-sizing: border-box;
+}
+main div div textarea::-moz-placeholder {
+  font-family: "Bebas Neue", cursive;
+}
+main div div textarea:-ms-input-placeholder {
+  font-family: "Bebas Neue", cursive;
+}
+main div div textarea::placeholder {
+  font-family: "Bebas Neue", cursive;
+}
+main div div .checkBox {
+  width: auto;
+  font-family: "Bebas Neue", cursive;
+  font-size: 1.5vw;
+}
+main div div input {
+  font-family: "Bebas Neue", cursive;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  outline: none;
+}
+main .formContacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+}
+main .ulForm {
+  width: 80%;
+  list-style: none;
+  text-align: center;
+}
+main #enviar:hover {
+  color: gray;
+  background-color: white;
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+main .form-control:focus {
+  border-color: rgba(209, 212, 48, 0.836);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(209, 212, 48, 0.836);
+}
+main .checkbox-rect input[type=checkbox] {
+  font-family: "Bebas Neue", cursive;
+  display: none;
+}
+main .checkbox-rect input[type=checkbox] + label {
+  font-family: "Bebas Neue", cursive;
+  color: grey;
+  position: relative;
+  margin-top: 20px;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 14px/20px "Open Sans", Arial, sans-serif;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+main .checkbox-rect input[type=checkbox]:hover + label:hover {
+  color: rgba(209, 212, 48, 0.836);
+}
+main .checkbox-rect input[type=checkbox]:hover + label:before {
+  background: #50565a;
+  box-shadow: inset 0px 0px 0px 2px #f7f2f2;
+}
+main .checkbox-rect input[type=checkbox] + label:last-child {
+  margin-bottom: 0;
+  font-family: "Bebas Neue", cursive;
+}
+main .checkbox-rect input[type=checkbox] + label:before {
+  content: "";
+  display: block;
+  width: 1.4em;
+  height: 1.4em;
+  border: 1px solid #343a3f;
+  border-radius: 0.2em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.2s, background 0.2s ease-in-out;
+  background: #f3f3f3;
+}
+main .checkbox-rect input[type=checkbox]:checked + label:before {
+  width: 1.3em;
+  height: 1.3em;
+  border-radius: 0.2em;
+  border: 2px solid #fff;
+  transform: rotate(90deg);
+  background: rgba(209, 212, 48, 0.836);
+  box-shadow: 0 0 0 1px #000;
+}
+
+/* lista de estilos main servicios */
+main div .filaServ {
+  margin-top: 4vh;
+  margin-bottom: 4vh;
+  overflow: hidden;
+}
+main div .filaServ div .titulos1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 3vw;
+}
+main div .filaServ div .titulos1:hover {
+  color: white;
+  transition: transform 0.2s ease;
+}
+
+/* lista de estilos main generales*/
+body {
+  font-size: medium;
+  background-color: #121212;
+  color: grey;
+  margin: 20px;
+}
+
+html {
+  height: 100vh;
+  max-height: 100vh;
+}
+
+a {
+  color: white;
+  display: inline-block;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgba(209, 212, 48, 0.836);
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vh;
+}
+
+.tituloSeccion {
+  font-family: "Bebas Neue", cursive;
+  color: grey;
+  text-align: center;
+  font-size: 20vh;
+  margin-bottom: 2vh;
+}
+
+.tituloSeccion:hover {
+  color: rgba(209, 212, 48, 0.836);
+}
+
+.descargaCv {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.1vw;
+  color: #121212;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 0.3vw;
+  width: 40%;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.descargaCv:hover {
+  color: gray;
+  background-color: white;
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+.fotoPerfil {
+  width: 20vw;
+  filter: grayscale(100%);
+  text-align: center;
+  justify-self: center;
+}
+
+.fotoPerfil:hover {
+  transform: scale(1.3, 1.3);
+  transition: transform 0.2s ease;
+  padding: 0;
+  margin: 0;
+}
+
+.infPers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+  padding-top: 2vh;
+}
+
+.infoPers {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  justify-items: center;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.formacion {
+  padding-bottom: 2vh;
+}
+
+.intereses {
+  display: block;
+  align-self: center;
+  padding-top: 2vh;
+}
+
+.fotoP {
+  overflow: hidden;
+  width: 80%;
+  text-align: center;
+}
+
+div .textoExp {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+}
+
+.carrusel {
   display: flex;
   justify-content: space-evenly;
 }
 
-@media screen and (max-width: 412px) {
-  body {
+.primeraimg {
+  width: 800px;
+}
+
+#enviar:hover {
+  color: gray;
+  background-color: white;
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+
+/* Media query para tablets  */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  html {
     height: 100vh;
-    overflow-y: unset;
+    max-height: 100vh;
+    display: block;
+    justify-items: center;
   }
-  .btnBcoProy {
+  .inicio {
+    max-height: 75%;
+    margin-top: 9vh;
+    margin-bottom: 9vh;
+  }
+  .navbar:target {
+    transform: translateY(0);
+  }
+  #rFirst {
+    margin-right: 0rem;
+  }
+  .hamburger img {
+    width: 150%;
+    height: 150%;
+  }
+  .close img {
+    width: 70%;
+    height: 70%;
+  }
+  li a {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 1vh;
+    text-decoration: none;
+  }
+  .burger a {
+    font-family: "Bebas Neue", cursive;
+    text-decoration: none;
+    font-size: 3vh;
+    color: grey;
+  }
+  /* estilos main*/
+  .cont {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .primera {
+    font-family: "Bebas Neue", cursive;
+    font-size: 12vh;
+    color: rgba(209, 212, 48, 0.836);
+    text-decoration: none;
+    line-height: 20vh;
+  }
+  .segunda {
+    font-family: "Bebas Neue", cursive;
+    color: grey;
+    text-align: center;
+    font-size: 8vh;
+    line-height: 20vh;
+  }
+  .front {
+    font-family: "Caveat", cursive;
+    color: rgba(209, 212, 48, 0.836);
+    font-size: 11vh;
+    text-align: center;
+  }
+  #rFirst {
+    margin-right: 1.5rem;
+  }
+  /* estilos footer*/
+  .pFooter {
+    color: grey;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 2vh;
+  }
+  .icon {
+    font-size: 6vh;
+    color: grey;
+    justify-content: space-arround;
+    margin-bottom: 10px;
+  }
+  .titulos1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 4vh;
+    text-align: center;
+  }
+  .titulos2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5vh;
+    font-size: 2vh;
+    font-weight: 500;
+    text-align: center;
+  }
+  .tituloSeccion {
+    font-size: 15vw;
+  }
+  .textoExp {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vh;
+    font-weight: 300;
+    text-align: center;
+  }
+  .fotoPerfil {
+    width: 20vw;
+    justify-self: center;
+  }
+  .primeraimg {
+    width: 70vw;
+  }
+  .fotoPerfil {
+    width: 40vw;
+  }
+  .fotoServ {
+    width: 40vw;
+  }
+  .descargaCv {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vh;
+    color: #121212;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 0.3vw;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    list-style: none;
+    background: #121212;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+  }
+  .navbar:target {
+    transform: translateY(0);
+  }
+  .hamburger img {
+    width: 150%;
+    height: 150%;
+  }
+  .close img {
+    width: 70%;
+    height: 70%;
+  }
+  li a {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    color: white;
+    font-weight: bold;
+    font-size: 2vh;
+    text-decoration: none;
+  }
+  .burger a {
+    font-family: "Bebas Neue", cursive;
+    text-decoration: none;
+    font-size: 6vh;
+    color: grey;
+  }
+  /* estilos main*/
+  .cont {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .primera {
+    align-self: center;
+    font-family: "Bebas Neue", cursive;
+    font-size: 10vh;
+    color: rgba(209, 212, 48, 0.836);
+    text-decoration: none;
+  }
+  .segunda {
+    font-family: "Bebas Neue", cursive;
+    color: grey;
+    text-align: center;
+    font-size: 6vh;
+  }
+  .front {
+    font-family: "Caveat", cursive;
+    color: rgba(209, 212, 48, 0.836);
+    font-size: 8.5vh;
+    text-align: center;
+  }
+  .pFooter {
+    color: gray;
+    text-align: center;
+    font-size: 3vh;
+  }
+  .icon {
+    font-size: 4vh;
+    color: gray;
+    justify-content: space-arround;
+    margin-bottom: 10px;
+  }
+  .titulos1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 4vh;
+    text-align: center;
+  }
+  .titulos2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.8vh;
+    font-weight: 500;
+    text-align: center;
+  }
+  .textoExp {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vh;
+    font-weight: 300;
+    text-align: center;
+  }
+  .tituloSeccion {
+    font-size: 8vh;
+  }
+  .fotoPerfil {
+    width: 10vw;
+    justify-self: center;
+    text-align: center;
+  }
+  .primeraimg {
+    width: 70vw;
+  }
+  .ulForm {
+    width: 80%;
+    list-style: none;
+    text-align: center;
+  }
+  .checkBox {
+    width: auto;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.8vh;
+  }
+  .fotoS {
+    text-align: center;
+    width: 20vw;
+    display: grid;
+  }
+  .descargaCv {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1vh;
+    color: #121212;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 0.3vw;
+    width: 40%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #rFirst {
+    margin-right: 1.5rem;
+  }
+  .fotoPerfil {
+    width: 40vw;
+  }
+  .fotoServ {
+    width: 40vw;
+  }
+}
+@media screen and (max-width: 450px) {
+  html {
+    height: 100vh;
+    max-height: 100vh;
+    display: block;
+    justify-items: center;
+  }
+  body {
+    font-size: medium;
+    background-color: #121212;
+    color: grey;
+    margin: 20px;
+  }
+  .inicio {
+    max-height: 75%;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+  }
+  .navbar {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    list-style: none;
+    background: #121212;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+  }
+  .navbar:target {
+    transform: translateY(0);
+  }
+  main div .filaServ {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    overflow: hidden;
+  }
+  main div .titulos1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 5vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  main div .titulos1:hover {
+    color: white;
+    transition: transform 0.2s ease;
+  }
+  .hamburger {
+    font-size: 100px;
+  }
+  .hamburger img {
+    width: 5vh;
+    height: 5vh;
+  }
+  header .burger .listaDesp .close img {
+    width: 3vh;
+    height: 3vh;
+  }
+  header .burger .listaDesp li a {
+    display: block;
+    color: grey;
+    font-weight: bold;
+    font-size: 10vw;
+    text-decoration: none;
+  }
+  .burger a {
+    font-family: "Bebas Neue", cursive;
+    text-decoration: none;
+    font-size: 6vh;
+    color: grey;
+  }
+  main div .btnBcoProy {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25vh;
     color: #121212;
     font-weight: bold;
     background-color: white;
     border-radius: 0.3vw;
     text-align: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    align-self: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
     width: 100%;
   }
-  .tituloSeccion {
+  div .tituloSeccion {
     font-family: "Bebas Neue", cursive;
     color: grey;
     text-align: center;
-    font-size: 7vh;
+    font-size: 8vh;
     line-height: 20vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
   }
-  .titulos2 {
+  main div .titulos2 {
     font-family: "Montserrat", sans-serif;
-    font-size: 1.5vh;
+    font-size: 2vh;
     font-weight: 500;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+  div .textoExp {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vh;
+    font-weight: 300;
+    text-align: center;
   }
   .cardslide {
     width: 90%;
-    display: flex;
-    justify-items: center;
-    justify-content: space-evenly;
   }
   .btnProyectos {
     display: block;
@@ -1027,39 +1152,60 @@ ul {
   .cardslide {
     width: 100%;
   }
-  .primera {
+  .slideShow {
+    text-align: center;
+    width: 80%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+  main div .primeraFila .cont {
+    display: block;
+    justify-items: center;
+    justify-content: space-between;
+  }
+  main div .primeraFila .cont .first .primera {
     font-family: "Bebas Neue", cursive;
-    font-size: 6vh;
+    font-size: 9vh;
     color: rgba(209, 212, 48, 0.836);
     text-decoration: none;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
-  .segunda {
+  main div .segunda {
     font-family: "Bebas Neue", cursive;
     color: grey;
     text-align: center;
-    font-size: 4vh;
+    font-size: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
   }
-  .front {
+  main div .front {
     font-family: "Caveat", cursive;
     color: rgba(209, 212, 48, 0.836);
-    font-size: 6vh;
+    font-size: 7vh;
     text-align: center;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
   }
-  #rFirst {
+  main div .primeraFila .cont .first #rFirst {
     margin-right: 0rem;
   }
   .footer {
     display: inline-block;
+    justify-items: end;
     justify-content: space-evenly;
     font-family: "Bebas Neue", cursive;
     text-align: center;
     position: absolute;
     bottom: 0;
-    width: 100%;
-    height: 100px;
+    left: 0;
     width: 100%;
   }
-  .Invitacion {
+  footer .pFooter {
+    color: gray;
+    font-size: 2vh;
+  }
+  .invitacion {
     font-family: "Montserrat", sans-serif;
     font-size: 2vh;
     font-weight: 500;
@@ -1067,10 +1213,73 @@ ul {
     text-align: center;
     margin-left: 10%;
   }
+  div .fotoS {
+    width: 70%;
+    text-align: center;
+  }
   .fotoPerfil {
     width: 80vw;
   }
   .fotoServ {
-    width: 90vw;
+    width: 80vw;
+  }
+  footer {
+    margin-top: 10vh;
+    margin-bottom: 0px;
+  }
+  footer .aFooter a .icon {
+    font-size: 3vh;
+    color: grey;
+    justify-content: space-arround;
+    margin-bottom: 10px;
+  }
+  footer .aFooter a .icon:hover {
+    color: white;
+    transform: scale(1.2, 1.2);
+    transition: transform 0.2s ease;
+  }
+  header .burger .listaDesp a {
+    font-family: "Bebas Neue", cursive;
+    text-decoration: none;
+    font-size: 7.5vw;
+    color: grey;
+  }
+  div .icono {
+    font-size: 7vh;
+  }
+  main div .fotoInt {
+    height: 50vw;
+    text-align: center;
+  }
+  .descargaCv {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2vh;
+    color: #121212;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 0.3vw;
+    width: 80%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  main div .filaServ div .titulos1 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 4vh;
+  }
+  main div div .checkBox {
+    width: auto;
+    font-family: "Bebas Neue", cursive;
+    font-size: 1.5vh;
+  }
+  main div.invitacion {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5vh;
+    font-weight: 500;
+    width: 80%;
+    text-align: center;
+    justify-content: space-evenly;
+    text-justify: center;
+    margin-left: 10%;
   }
 }/*# sourceMappingURL=estilos.css.map */

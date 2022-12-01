@@ -1,0 +1,17 @@
+
+main {
+  div .filaServ {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    overflow: hidden;
+    div .titulos1 {
+      font-family: "Bebas Neue", cursive;
+      font-size: 3vw;
+    }
+    div .titulos1:hover {
+      color: white;
+      transition: transform 0.2s ease;
+    }
+  }
+
+}
